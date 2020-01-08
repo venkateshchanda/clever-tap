@@ -7,5 +7,4 @@ aws cloudformation create-stack --template-body file://$PWD/infra/iam.yml --stac
 
 aws cloudformation create-stack --template-body file://$PWD/infra/app-cluster.yml --stack-name app-cluster
 
-# Edit the api.yml to update Image tag/URL under Task > ContainerDefinitions and,
 aws cloudformation create-stack --template-body file://$PWD/infra/api.yml --stack-name api
